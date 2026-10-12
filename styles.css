@@ -188,7 +188,6 @@ span {
 /* Style for channel trailer */
 #channel-trailer {
   width: 60%;
-  height: 45vh;
   border: 10px solid #3470bf;
   border-radius: 50px;
 }
