@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mission 1</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div id="page-title">
+        <a href="https://www.twitch.tv/imlinon"
+          ><img id="logo" src="linonHype.gif" alt="animated logo"
+        /></a>
+        <h1>linon</h1>
+      </div>
+      <!-- NAV SECTION -->
+      <nav>
+        <a href="#channel">Channel</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </header>
+    <main>
+      <!-- MAIN CONTENT -->
+      <section id="channel">
+        <!-- ABOUT SECTION -->
+        <div id="about">
+          <h2>About <span class="blue">Me</span></h2>
+          <p>
+            26 | Filipino | Competitive shooter & Variety streamer | Catch the
+            live chaos!
+          </p>
+          <h3>Milestones</h3>
+          <ul>
+            <li class="milestone-list">First Stream - September 29, 2020</li>
+            <li class="milestone-list">50 Followers - February 2, 2023</li>
+            <li class="milestone-list">Twitch Affiliate - July 1, 2023</li>
+          </ul>
+          <h3>Peripherals</h3>
+          <ul>
+            <li class="pc-list">Monitor: AOC 25G3ZM</li>
+            <li class="pc-list">Mouse: Logitech GPX Superlight 2</li>
+            <li class="pc-list">Keyboard: MChose Ace 60 Pro</li>
+            <li class="pc-list">Mousepad: Artisan Zero Soft XXL</li>
+            <li class="pc-list">Headset: Truthear x Crinnacle Zero</li>
+          </ul>
+          <h3>Socials</h3>
+          <div id="socials">
+            <a
+              href="https://www.twitch.tv/imlinon"
+              class="social-links"
+              target="_blank"
+              ><i class="fa-brands fa-twitch"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/21linon"
+              class="social-links"
+              target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- CHANNEL TRAILER SECTION -->
+        <div id="trailer">
+          <h2>Channel <span class="blue-text">Trailer</span></h2>
+          <video
+            src="channel-trailer.mp4"
+            controls
+            allowfullscreen
+            id="channel-trailer"
+          ></video>
+        </div>
+      </section>
+
+      <!-- GAME LIBRARY SECTION -->
+      <section id="games">
+        <h2>GAM<span class="blue">ES</span></h2>
+
+        <!-- GAME CONTAINERS SECTION -->
+        <div class="game-collection">
+          <a
+            href="https://tracker.gg/valorant/profile/riot/hanni%20fan%23peepo/overview?platform=pc&playlist=competitive&season=8102cd81-43a0-d0d7-bd59-47b8fe9bed1b"
+            class="game-container"
+            target="_blank"
+          >
+            <img
+              class="cover-art"
+              src="valorant-cover.jpg"
+              alt="valorant cover art"
+            />
+            <div class="shadow"></div>
+            <p>VALORANT</p>
+          </a>
+
+          <a
+            href="https://apex.tracker.gg/apex/profile/origin/Linoooon/overview"
+            class="game-container"
+            target="_blank"
+          >
+            <img class="cover-art" src="apex-cover.jpg" alt="apex cover art" />
+            <div class="shadow"></div>
+            <p>APEX LEGENDS</p>
+          </a>
+
+          <a
+            href="https://ewgf.gg/player/5986DE995REM"
+            class="game-container"
+            target="_blank"
+          >
+            <img
+              class="cover-art"
+              src="tekken-cover.jpg"
+              alt="tekken cover art"
+            />
+            <div class="shadow"></div>
+            <p>TEKKEN 8</p>
+          </a>
+
+          <a
+            href="https://op.gg/lol/summoners/oce/hanni%20fan-peepo"
+            class="game-container"
+            target="_blank"
+          >
+            <img
+              class="cover-art"
+              src="league-cover.jpg"
+              alt="league of legends cover art"
+            />
+            <div class="shadow"></div>
+            <p>LEAGUE OF LEGENDS</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer id="contact">
+      <form
+        action="mailto:ralphangeloperez@gmail.com"
+        method="post"
+        id="email-message"
+      >
+        <fieldset>
+          <legend>Message Me</legend>
+          <!-- EMAIL SUBJECT -->
+          <div id="subject-line">
+            <label>Subject:</label>
+            <input
+              id="collaboration"
+              type="radio"
+              name="subject"
+              value="collaboration"
+            />
+            <label for="collaboration">Collaboration</label>
+            <input
+              id="sponsorships"
+              type="radio"
+              name="subject"
+              value="sponsorships"
+            />
+            <label for="sponsorships">Sponsorship</label>
+            <input id="others" type="radio" name="subject" value="others" />
+            <label for="others">Others</label>
+          </div>
+          <!-- EMAIL MESSAGE -->
+          <div id="message">
+            <label>Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              cols="80"
+              placeholder="Place your message here."
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <!-- SUBMIT -->
+        <input type="Submit" name="Submit" class="submit-button" />
+      </form>
+    </footer>
+  </body>
+</html>
